@@ -9,8 +9,9 @@ Este proyecto sirve para poder probar la API de control-usuarios. Este frontend 
 ## API
 Para poder consumir esta landing page, se utliza el siguiente proyecto:
     
-    ```bash
+  ```bash
      https://github.com/LuisOrihuela08/control-usuariosAPI.git
+   ```
 
 ## 👨‍💻 Autor
 Luis Orihuela Orozco | 
