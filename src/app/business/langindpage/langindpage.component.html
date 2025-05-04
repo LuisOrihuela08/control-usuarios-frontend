@@ -1,0 +1,42 @@
+<section class="hero">
+    <h1>Bienvenido a MiApp</h1>
+    <p>Tu solución moderna y eficiente para lo que necesitas.</p>
+    <a href="#contacto" class="btn-hero">Contáctanos</a>
+</section>
+
+<section class="sobre-nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una empresa comprometida con la innovación y el desarrollo de soluciones digitales personalizadas.</p>
+</section>
+
+<section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicio-lista">
+        <div class="servicio">
+            <h3>Desarrollo Web</h3>
+            <p>Construimos sitios modernos, responsivos y seguros.</p>
+        </div>
+        <div class="servicio">
+            <h3>Aplicaciones Móviles</h3>
+            <p>Apps para Android y iOS con diseño profesional.</p>
+        </div>
+        <div class="servicio">
+            <h3>Consultoría IT</h3>
+            <p>Te ayudamos a optimizar tus procesos tecnológicos.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form [formGroup]="usuarioForm" (ngSubmit)="enviarFormulario()" #formulario="ngForm">
+        <input type="text" name="nombres" id="nombres" formControlName="nombres" placeholder="Nombres" required />
+        <input type="text" name="apellidos" id="apellidos" formControlName="apellidos"  placeholder="Apellidos" required />
+        <input type="email" name="correo" id="correo" formControlName="correo" placeholder="Correo" required />
+        <input type="text" name="numero_telefonico" id="numero_telefonico" formControlName="numero_telefonico" placeholder="Número telefónico"required />
+        <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+    </form>
+</section>
+<section class="made-by">
+    <h2>Luis Orihuela Orozco © 2025</h2>
+</section>
