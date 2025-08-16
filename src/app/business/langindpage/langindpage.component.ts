@@ -5,11 +5,10 @@ import { UsuarioDTO } from '../../shared/models/UsuarioDTO';
 import { UsuarioService } from '../../shared/services/usuario.service';
 
 @Component({
-  selector: 'app-langindpage',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './langindpage.component.html',
-  styleUrl: './langindpage.component.css'
+    selector: 'app-langindpage',
+    imports: [CommonModule, ReactiveFormsModule],
+    templateUrl: './langindpage.component.html',
+    styleUrl: './langindpage.component.css'
 })
 export class LangindpageComponent implements OnInit {
 
